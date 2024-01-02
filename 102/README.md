@@ -25,7 +25,7 @@ Create a Student package, by compiling class files which refer to the same packa
 
 Call the client: /usr/lib/jvm/java-11-openjdk/bin/java StudentClient.java
 
-    [user@machine ~]$ /usr/lib/jvm/java-11-openjdk/bin/java StudentParametricClient.java "John Doe" 12 "19 marthin luther king street, los angeles" "aa@example.local"
+    [user@machine ~]$ /usr/lib/jvm/java-11-openjdk/bin/java StudentParametricClient.java "John Doe" 12 "19 martin luther king street, los angeles" "aa@example.local"
     This is the student client
     Returning values
     New student name is John Doe, age is 12 
