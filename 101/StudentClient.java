@@ -2,17 +2,11 @@ import java.util.*;
 import student.Student;
 
 public class Client{
-//Student student = new Student();
-//student.main();
-//student.setAge(30);
-//student.setName("Mark");
-//student.setAddress("Washington Street, 10043, NY");
-//student.setEmail("mark@example.local");
+
 
 public static void main(String[] args) {
 System.out.println("This is the student client");
 Student student = new Student("Mark",30,"Washington Street, 10043, NY","mark@example.local");
-//student.main();
 student.setAge(30);
 student.setName("Mark");
 student.setAddress("Washington Street, 10043, NY");
