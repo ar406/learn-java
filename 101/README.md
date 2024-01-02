@@ -15,7 +15,7 @@ Create a Student package, by compiling class files which refer to the same packa
 
 Call the client: /usr/lib/jvm/java-11-openjdk/bin/java StudentClient.java
 
-[user@machine ~]$ /usr/lib/jvm/java-11-openjdk/bin/java StudentClient.java 
-This is the student client
-Returning values
-New student name is Mark, age is 30 
+    [user@machine ~]$ /usr/lib/jvm/java-11-openjdk/bin/java StudentClient.java 
+    This is the student client
+    Returning values
+    New student name is Mark, age is 30 
