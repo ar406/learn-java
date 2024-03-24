@@ -1,4 +1,4 @@
-The goal here is to define a class and use its methods from another class ("client" class), **specifying its arguments from the command line**.
+The goal here is to define a class and use its methods from another class ("client" class), **specifying its arguments from the command line and validating some arguments against custom logic**.
 
 As in 101 and 102, we are not simulating different classes on possibly different nodes (distributed system), so there is no web or application server here.
 Instead, **packages** are used, with the assumption that all classes are stored on a shared filesystem on a single node.
@@ -9,6 +9,8 @@ To support a specific set of flags (command-line arguments), define the set of s
 Note that sets of strings can be directly printed by System.out.format using %s (which means string).
 
 One could also use Arrays, but Sets are unordered and in this scenario order doesn't really matter.
+
+In order to enable different behavior depending on the different value of the flag, the **switch/case** construct can be used.
 
 **Instructions**
 
