@@ -30,11 +30,13 @@ Call the client: /usr/lib/jvm/java-11-openjdk/bin/java StudentClient.java
     New student name is John Doe, age is 12 
 
 When using the "enroll" flag, the application returns a custom message:
+
     [user@machine ~]$ /usr/lib/jvm/java-11-openjdk/bin/java StudentParametricClient.java "enroll" "John Doe" 12 "19 martin luther king street, los angeles" "aa@example.local"
     This is the student client
     Doing nothing - for now
     
 Finally, if the user selects an unsupported flag, the application returns an error and terminates:
+
     [user@machine ~]$ /usr/lib/jvm/java-11-openjdk/bin/java StudentParametricClient.java "wrong_enroll" "John Doe" 12 "19 martin luther king street, los angeles" "aa@example.local"
     This is the student client
     WARNING - user asked for flag wrong_enroll, supported_flags contains [enroll, add_student]
