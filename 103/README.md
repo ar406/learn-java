@@ -8,6 +8,7 @@ Instead, **packages** are used, with the assumption that all classes are stored 
 To support a specific set of flags (command-line arguments), define the set of supported flags in a Set and use .contains to ensure the user-provided flag is supported.
 Note that sets of strings can be directly printed by System.out.format using %s (which means string).
 
+One could also use Arrays, but Sets are unordered and in this scenario order doesn't really matter.
 
 **Instructions**
 
@@ -27,7 +28,13 @@ Call the client: /usr/lib/jvm/java-11-openjdk/bin/java StudentClient.java
     New student name is John Doe, age is 12 
 
 When using the "enroll" flag, the application returns a custom message:
-
+    [user@machine ~]$ /usr/lib/jvm/java-11-openjdk/bin/java StudentParametricClient.java "enroll" "John Doe" 12 "19 martin luther king street, los angeles" "aa@example.local"
+    This is the student client
+    Doing nothing - for now
+    
 Finally, if the user selects an unsupported flag, the application returns an error and terminates:
+    [user@machine ~]$ /usr/lib/jvm/java-11-openjdk/bin/java StudentParametricClient.java "wrong_enroll" "John Doe" 12 "19 martin luther king street, los angeles" "aa@example.local"
+    This is the student client
+    WARNING - user asked for flag wrong_enroll, supported_flags contains [enroll, add_student]
 
 
